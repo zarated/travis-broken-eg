@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- "6.1"
+- '6.1'
 notifications:
   email:
     on_success: never
@@ -9,6 +9,10 @@ notifications:
 # branches:
 #  except:
 #  - hf-travis-pmz
+
+branches:
+  only:
+    - hf-travis-pmz
 
 before_script:
   - echo 'running before script'
