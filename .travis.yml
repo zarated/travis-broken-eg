@@ -33,7 +33,7 @@ script:
   - echo 'running script'
 
 after_script:
-echo 'running after script'
+  - echo 'running after script'
 
 after_success:
 echo 'running after success'
