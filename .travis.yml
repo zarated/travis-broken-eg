@@ -5,6 +5,12 @@ notifications:
   email:
     on_success: never
     on_failure: never
+before_script:
+  - echo "@BEFORE SCRIPT"
 script:
   - npm install &> /dev/null
   - echo "Running test"
+after_script:
+  - echo "@AFTER SCRIPT"
+after_success:
+  - echo "@AFTER SUCCESS"
