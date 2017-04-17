@@ -7,10 +7,10 @@ notifications:
     on_failure: never
 before_script:
   - echo 'running before script'
-  - npm install -g gulp
-  - npm install -g karma
-  - npm install -g mocha
-  - npm install -g bower
+#  - npm install -g gulp
+#  - npm install -g karma
+#  - npm install -g mocha
+#  - npm install -g bower
 script:
   - npm install &> /dev/null
   - echo 'running script'
