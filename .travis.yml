@@ -32,14 +32,11 @@ script:
   - npm install &> /dev/null
   - echo 'running script'
 
-after_script:
-  - echo 'running after script'
+after_script: echo 'running after script'
 
-after_success:
-echo 'running after success'
+after_success: echo 'running after success'
 
-before_deploy:
-echo 'running before deploy'
+before_deploy: echo 'running before deploy'
 
 deploy:
   verbose: true
@@ -49,5 +46,4 @@ deploy:
   on:
     all_branches: true
 
-after_deploy:
-echo 'running after deploy'
+after_deploy: echo 'running after deploy'
