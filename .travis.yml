@@ -6,11 +6,11 @@ notifications:
     on_success: never
     on_failure: never
 before_script:
-  - echo "@BEFORE SCRIPT"
+  - echo "running before script"
 script:
   - npm install &> /dev/null
-  - echo "Running test"
+  - echo "running script"
 after_script:
-  - echo "@AFTER SCRIPT"
+  - echo "running after script"
 after_success:
-  - echo "@AFTER SUCCESS"
+  - echo "running after success"
