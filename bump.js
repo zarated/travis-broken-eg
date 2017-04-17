@@ -1,4 +1,4 @@
-t json = require('json-update')
+const json = require('json-update')
 const fs = require('fs')
 
 const package = require('./package.json')
