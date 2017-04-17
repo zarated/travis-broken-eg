@@ -15,7 +15,7 @@ notifications:
 branches:
   only:
     - hf-travis-pmz
-#   - hf-travis-pmz2
+    - hf-travis-pmz2
 
 before_script:
   - echo 'running before script'
