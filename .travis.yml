@@ -3,6 +3,10 @@ language: node_js
 node_js:
 - '6.1'
 
+cache:
+  directories:
+    - node_modules
+
 notifications:
   email:
     on_success: never
@@ -29,13 +33,13 @@ script:
   - echo 'running script'
 
 after_script:
-  - echo 'running after script'
+echo 'running after script'
 
 after_success:
-  - echo 'running after success'
+echo 'running after success'
 
 before_deploy:
-  - echo 'running before deploy'
+echo 'running before deploy'
 
 deploy:
   verbose: true
@@ -46,4 +50,4 @@ deploy:
     all_branches: true
 
 after_deploy:
-  - echo 'running after deploy'
+echo 'running after deploy'
