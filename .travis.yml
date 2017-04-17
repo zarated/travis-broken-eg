@@ -5,6 +5,11 @@ notifications:
   email:
     on_success: never
     on_failure: never
+
+branches:
+  except:
+  - hf-travis-pmz
+
 before_script:
   - echo 'running before script'
 #  - npm install -g gulp
