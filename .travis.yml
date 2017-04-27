@@ -1,11 +1,6 @@
 language: node_js
 node_js:
 - '6.1'
-addons:
-  browserstack:
-    username:  "paolozarate1"
-    access_key:
-      secure: "Od+WENh5w4WFmy6sJxGYKk6zoiFLug2E+KnlwV7x4W0dxD01Y/ctzYp+dPaL94lHkRUiDSBo5tkVs3Vu4Eegi0NTfU7zo64A0RClLIUo1ztaM74s3oNuP+kAziEa9JqRK9TJQOW078hl0azw2T7OpG+ag9ZVLCb/16ub2/+RaLqMnd58oInV2VpOhzLPEgbLvq/KbjO02TXFVil+nuu/KMIL63pn+TdRE92cxSksSVoVbQV0TtEghYTdgUo3WM4lj0zQ132HtTSLyP9NfqiTC+HszczgkMm6VnqNLvSPZOIvABRhnmg8BuNxpIs+1CQUhSSkOOMFx0Qf648vNCi1scWX+lfktoFr3kzx3YBkTdRnB3bMl7nvk7Eepr3ihViVp78x+f6TZkKeYmUDwiqj8hu6Y7g9paDslWtIcaerkPfw+b2MUidN9ay54XXAXxOw8wxn/USH5oWeE1A7L6mNcsHSQVAilMX9QQ0Io2FVwmUbtpbU2ermpuY/XhDQkCioDiV3qlOU97SP9WqEfvc5xUCTZl1QxJtwQ1oxbpvlUlsfxv+V6lWlowkJDfzuf9QYgrD58R4S19TN6sND/vssK5Sbfl+Z53YRjSi2beUkR9KgZpL6NicJmEMWEEko1b5AVwPWdPKyg4SnYx1+XARE0oaf5nIAzNAMoKZiu7z6P7A="
 cache:
   directories:
     - node_modules
@@ -27,6 +22,7 @@ before_script:
 script:
   - npm install &> /dev/null
   - echo 'running script'
+  - node main.js ${BSUN} ${BSPW}
 after_script: echo 'running after script'
 after_success: echo 'running after success'
 before_deploy: echo 'running before deploy'

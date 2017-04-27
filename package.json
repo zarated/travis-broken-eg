@@ -25,6 +25,7 @@
     "json-update": "^3.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "selenium-webdriver": "^3.4.0",
     "webpack": "^2.4.1"
   }
 }
