@@ -22,7 +22,7 @@ before_script:
 script:
   - npm install &> /dev/null
   - echo 'running script'
-  - node main.js ${BSUN} ${BSPW}
+  - node main.js $BSUN $BSPW
 after_script: echo 'running after script'
 after_success: echo 'running after success'
 before_deploy: echo 'running before deploy'
