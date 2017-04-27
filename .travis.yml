@@ -1,41 +1,32 @@
 language: node_js
-
 node_js:
 - '6.1'
-
 cache:
   directories:
     - node_modules
-
 notifications:
   email:
     on_success: never
     on_failure: never
-
 # branches:
 #  except:
 #  - hf-travis-pmz
-
 branches:
   only:
     - hf-travis-pmz
     - hf-travis-pmz2
-
 before_script:
   - echo 'running before script'
 #  - npm install -g gulp
 #  - npm install -g karma
 #  - npm install -g mocha
 #  - npm install -g bower
-
 script:
   - npm install &> /dev/null
   - echo 'running script'
-
 after_script: echo 'running after script'
 after_success: echo 'running after success'
 before_deploy: echo 'running before deploy'
-
 deploy:
   verbose: true
   skip_cleanup: true
@@ -43,5 +34,4 @@ deploy:
   script: ./deploy.sh
   on:
     all_branches: true
-
 after_deploy: echo 'running after deploy'
