@@ -10,11 +10,9 @@ notifications:
     on_failure: never
 # branches:
 #  except:
-#  - hf-travis-pmz
 branches:
   only:
-    - hf-travis-pmz
-    - hf-travis-pmz2
+    - exp-dev-dmz
 before_script:
   - echo 'running before script'
 #  - npm install -g gulp
