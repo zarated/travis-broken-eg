@@ -33,9 +33,7 @@ script:
   - echo 'running script'
 
 after_script: echo 'running after script'
-
 after_success: echo 'running after success'
-
 before_deploy: echo 'running before deploy'
 
 deploy:
